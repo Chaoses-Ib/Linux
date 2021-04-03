@@ -17,6 +17,7 @@
   - [Signals](Kernel/Exceptions/Signals.md)
 - [→Memory Management](https://github.com/Chaoses-Ib/InformationSystems#memory-management)
 - [→File Systems](https://github.com/Chaoses-Ib/InformationSystems#file-systems)
+- [Users](Kernel/Users/README.typ)
 - [Modules](Kernel/Modules/README.md)
 - [Build](Kernel/Build/README.md)
 - [sysctl](Kernel/sysctl.typ)

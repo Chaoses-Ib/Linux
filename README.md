@@ -26,6 +26,8 @@
 - [init Systems](Kernel/init/README.typ)
   - [systemd](Kernel/init/systemd/README.typ)
     - [Journal](Kernel/init/systemd/Journal.typ)
+- Security
+  - [File Permissions](Kernel/Security/Permissions/README.typ)
 
 ## [Virtualization](Virtualization/README.md)
 - [Docker](Virtualization/Docker/README.md)

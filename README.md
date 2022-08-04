@@ -1,3 +1,4 @@
 # Linux
-## Android
-- [Linux Distributions on Android](Android/Linux%20Distributions%20on%20Android.md)
+## [Distributions](Distributions/README.md)
+### [Android](Distributions/Android/README.md)
+- [Linux Distributions on Android](Distributions/Android/Linux%20Distributions%20on%20Android.md)

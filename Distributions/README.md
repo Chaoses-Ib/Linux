@@ -1,4 +1,8 @@
 # Distributions
+A **Linux distribution** (often abbreviated as **distro**) is an operating system made from a software collection that includes the Linux kernel, and, often, a package manager and GNU tools and libraries.[^wiki]
+
+[^wiki]: [Linux distribution - Wikipedia](https://en.wikipedia.org/wiki/Linux_distribution)
+
 - RPM-based
   - Red Hat Enterprise Linux
   - CentOS

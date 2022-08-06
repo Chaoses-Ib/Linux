@@ -1,4 +1,8 @@
 # Linux Distributions on Android
+[^appinn]
+
+[^appinn]: [Linux手机对于普通用户有什么使用价值吗？ - 讨论分享 - 小众软件官方论坛](https://meta.appinn.net/t/topic/34966)
+
 ## chroot
 A chroot on Unix-like operating systems is an operation that changes the apparent root directory for the current running process and its children.[^chroot-wiki]
 

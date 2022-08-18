@@ -1,0 +1,2 @@
+# Android App Bundles
+An **Android App Bundle**, which is an archive file with an `.aab` suffix, contains the contents of an Android app project including some additional metadata that is not required at runtime. An AAB is a publishing format and is not installable on Android devices, it defers APK generation and signing to a later stage.

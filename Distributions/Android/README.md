@@ -11,6 +11,7 @@
 ## Applications
 - [Android Packages](Applications/Android%20Packages.md)
 - [Android App Bundles](Applications/Android%20App%20Bundles.md)
+- [Launchers](Applications/Launchers.md)
 
 ## Information sources
 Blogs:

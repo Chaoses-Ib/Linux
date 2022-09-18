@@ -9,4 +9,5 @@
 #### Applications
 - [Android Packages](Distributions/Android/Applications/Android%20Packages.md)
 - [Android App Bundles](Distributions/Android/Applications/Android%20App%20Bundles.md)
+- [ReVanced](Distributions/Android/Applications/ReVanced.md)
 - [Launchers](Distributions/Android/Applications/Launchers.md)

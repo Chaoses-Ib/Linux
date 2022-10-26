@@ -1,7 +1,7 @@
 # Linux
 - [Unix-like](Unix-like.md)
 
-## Kernel
+## [Kernel](Kernel/README.md)
 - [Signals](Kernel/Signals/README.md)
 
 ## [Distributions](Distributions/README.md)

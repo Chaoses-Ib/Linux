@@ -2,6 +2,7 @@
 - [Unix-like](Unix-like.md)
 
 ## [Kernel](Kernel/README.md)
+- [Exceptions](Kernel/Exceptions/README.md)
 - Processes
   - [Fork](Kernel/Processes/Fork.md)
   - [Execution](Kernel/Processes/Execution.md)

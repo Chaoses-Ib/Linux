@@ -1,4 +1,39 @@
 # Signals
+Signals[^csapp]:
+
+Number | Name | Default action | Corresponding event
+--- | --- | --- | ---
+1 | SIGHUP | Terminate | Terminal line hangup
+2 | SIGINT | Terminate | Interrupt from keyboard
+3 | SIGQUIT | Terminate | Quit from keyboard
+4 | SIGILL | Terminate | Illegal instruction
+5 | SIGTRAP | Terminate and dump core | Trace trap
+6 | SIGABRT | Terminate and dump core | Abort signal from `abort()`
+7 | SIGBUS | Terminate | Bus error
+8 | SIGFPE | Terminate and dump core | Floating-point exception
+9 | SIGKILL | Terminate | Kill program
+10 | SIGUSR1 | Terminate | User-deﬁned signal 1
+11 | SIGSEGV | Terminate and dump core | Invalid memory reference (seg fault)
+12 | SIGUSR2 | Terminate | User-deﬁned signal 2
+13 | SIGPIPE | Terminate | Wrote to a pipe with no reader
+14 | SIGALRM | Terminate | Timer signal from `alarm()`
+15 | SIGTERM | Terminate | Software termination signal
+16 | SIGSTKFLT | Terminate | Stack fault on coprocessor
+17 | SIGCHLD | Ignore | A child process has stopped or terminated
+18 | SIGCONT | Ignore | Continue process if stopped
+19 | SIGSTOP | Stop until next SIGCONT | Stop signal not from terminal
+20 | SIGTSTP | Stop until next SIGCONT | Stop signal from terminal
+21 | SIGTTIN | Stop until next SIGCONT | Background process read from terminal
+22 | SIGTTOU | Stop until next SIGCONT | Background process wrote to terminal
+23 | SIGURG | Ignore | Urgent condition on socket
+24 | SIGXCPU | Terminate | CPU time limit exceeded
+25 | SIGXFSZ | Terminate | File size limit exceeded
+26 | SIGVTALRM | Terminate | Virtual timer expired
+27 | SIGPROF | Terminate | Proﬁling timer expired
+28 | SIGWINCH | Ignore | Window size changed
+29 | SIGIO | Terminate | I/O now possible on a descriptor
+30 | SIGPWR | Terminate | Power failure
+
 ## Sending
 - System events
   

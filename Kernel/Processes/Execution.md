@@ -4,70 +4,81 @@
 ## Implementation
 ```cpp
 // v6.1
-execve(filename, argv, envp) {
+
+execve(pathname, argv, envp) {
   sys_execve(filename, argv, envp) {
     do_execve(filename, argv, envp) {
-      do_execveat_common(fd=AT_FDCWD, filename, argv, envp, flags=0) {
-        linux_binprm *bprm{ fd, filename, argv, envp }
-        bprm_execve(bprm, fd, filename, flags) {
-          current->in_execve = 1
-          sched_exec()
-          bprm->file = do_open_execat(fd, filename, flags)
-          exec_binprm(bprm) {
-            search_binary_handler(bprm) {
-              for (linux_binfmt *fmt : &formats) {
-                fmt->load_binary(bprm) {
-                  switch (bprm) {
-                  case elf_format:
-                    load_elf_binary(bprm) {
-                      begin_new_exec(bprm) {
-                        task_struct *me = current
-                        de_thread(tsk=me) {
-                          signal_struct *sig = tsk->signal
-                          sig->group_exec_task = tsk
-                          sig->notify_count = zap_other_threads(tsk)
-                          if (!thread_group_leader(tsk))
-                            sig->notify_count--
-                          while (sig->notify_count) {
-                            schedule()
-                          }
-                        }
-                        io_uring_task_cancel()
-                        unshare_files()
-                        set_mm_exe_file(bprm->mm, bprm->file)
-                        exec_mmap(bprm->mm) {
-                          task_struct *tsk = current
-                          mm_struct *old_mm = current->mm
-                          exec_mm_release(tsk, old_mm)
-                        }
-                        unshare_sighand(me)
-                        flush_thread()
-                        flush_signal_handlers(t=me, force_default=0) {
-                          for (k_sigaction *ka : t->sighand->action) {
-                            if (force_default || ka->sa.sa_handler != SIG_IGN)
-                              ka->sa.sa_handler = SIG_DFL
-                            sigemptyset(&ka->sa.sa_mask)
-                          }
-                        }
-                      }
-                      setup_new_exec(bprm) {
-                        switch (arch) {
-                        case x86:
-                          arch_setup_new_exec()
-                        }
-                      }
-                      setup_arg_pages(bprm, randomize_stack_top(STACK_TOP), executable_stack)
-                      START_THREAD(elf_ex, regs, elf_entry, bprm->p)
+      do_execveat_common(fd=AT_FDCWD, filename, argv, envp, flags=0)
+    }
+  }
+}
+
+execveat(dirfd, pathname, argv, envp, flags) {
+  sys_execveat(dirfd, pathname, argv, envp, flags) {
+    do_execveat(fd, filename=getname_uflags(pathname, flags), argv, envp, flags) {
+      do_execveat_common(fd, filename, argv, envp, flags)
+    }
+  }
+}
+
+do_execveat_common(fd, filename, argv, envp, flags) {
+  linux_binprm *bprm{ fd, filename, argv, envp }
+  bprm_execve(bprm, fd, filename, flags) {
+    current->in_execve = 1
+    sched_exec()
+    bprm->file = do_open_execat(fd, filename, flags)
+    exec_binprm(bprm) {
+      search_binary_handler(bprm) {
+        for (linux_binfmt *fmt : &formats) {
+          fmt->load_binary(bprm) {
+            switch (bprm) {
+            case elf_format:
+              load_elf_binary(bprm) {
+                begin_new_exec(bprm) {
+                  task_struct *me = current
+                  de_thread(tsk=me) {
+                    signal_struct *sig = tsk->signal
+                    sig->group_exec_task = tsk
+                    sig->notify_count = zap_other_threads(tsk)
+                    if (!thread_group_leader(tsk))
+                      sig->notify_count--
+                    while (sig->notify_count) {
+                      schedule()
+                    }
+                  }
+                  io_uring_task_cancel()
+                  unshare_files()
+                  set_mm_exe_file(bprm->mm, bprm->file)
+                  exec_mmap(bprm->mm) {
+                    task_struct *tsk = current
+                    mm_struct *old_mm = current->mm
+                    exec_mm_release(tsk, old_mm)
+                  }
+                  unshare_sighand(me)
+                  flush_thread()
+                  flush_signal_handlers(t=me, force_default=0) {
+                    for (k_sigaction *ka : t->sighand->action) {
+                      if (force_default || ka->sa.sa_handler != SIG_IGN)
+                        ka->sa.sa_handler = SIG_DFL
+                      sigemptyset(&ka->sa.sa_mask)
                     }
                   }
                 }
+                setup_new_exec(bprm) {
+                  switch (arch) {
+                  case x86:
+                    arch_setup_new_exec()
+                  }
+                }
+                setup_arg_pages(bprm, randomize_stack_top(STACK_TOP), executable_stack)
+                START_THREAD(elf_ex, regs, elf_entry, bprm->p)
               }
             }
           }
-          current->in_execve = 0
         }
       }
     }
+    current->in_execve = 0
   }
 }
 ```
@@ -89,4 +100,16 @@ int execve(const char *path, char *const argv[], char *const envp[]);
 // If the process image file is not a valid executable object, execlp() and execvp() use the contents of that file as standard input to a command interpreter conforming to system().
 int execlp(const char *file, const char *arg0, ... /*, (char *)0 */);
 int execvp(const char *file, char *const argv[]);
+
+#ifdef _GNU_SOURCE
+int execvpe(const char *file, char *const argv[], char *const envp[]);
+#endif
+
+#if _POSIX_C_SOURCE >= 200809L
+int fexecve(int fd, char *const argv[], char *const envp[]);
+#endif
+
+#ifdef __linux__
+int execveat(int dirfd, const char *pathname, const char *const argv[], const char *const envp[], int flags);
+#endif
 ```

@@ -5,6 +5,68 @@ void exit(int status);
 ```
 
 ## Reaping child processes
+### Implementation
+```cpp
+// v6.1
+
+wait(status) {
+  sys_wait4(-1, status, options=0, ru=NULL)
+}
+
+waitpid(pid, status, options) {
+  sys_wait4(upid, stat_addr, options, ru=NULL)
+}
+
+wait4(pid, status, options, rusage) {
+  sys_wait4(pid, status, options, rusage)
+}
+
+enum pid_type {
+  PIDTYPE_PID
+  PIDTYPE_TGID
+  PIDTYPE_PGID
+  PIDTYPE_SID
+  PIDTYPE_MAX
+}
+
+sys_wait4(upid, stat_addr, options, ru=NULL) {
+  kernel_wait4(upid, stat_addr, options, ru) {
+    wait_ops {
+      .wo_type, .wo_pid = {
+        upid == -1: PIDTYPE_MAX
+        upid < 0: PIDTYPE_PGID, find_get_pid(-upid)
+        upid == 0: PIDTYPE_PGID, get_task_pid(current, PIDTYPE_PGID)
+        upid > 0: PIDTYPE_PID, find_get_pid(upid)
+      }
+      .wo_flags = options | WEXITED
+      .wo_info = NULL
+      .wo_stat = 0
+      .wo_rusage = ru
+    }
+    do_wait(&wo) {
+      switch (wo->wo_type) {
+        PIDTYPE_PID:
+          retval = do_wait_pid(wo) {
+            retval = wait_consider_task(wo, ptrace=false, target=pid_task(wo->wo_pid, PIDTYPE_TGID))
+            if not retval
+              retval = wait_consider_task(wo, ptrace=true, target=pid_task(wo->wo_pid, PIDTYPE_PID))
+          }
+        default:
+          while_each_thread(current, tsk) {
+            retval = do_wait_thread(wo, tsk)
+            if not retval
+              retval = ptrace_do_wait(wo, tsk)
+            if wo->wo_flags & WNOTHREAD
+              break
+          }
+      }
+    }
+    put_pid(pid)
+  }
+}
+```
+
+### API
 ```c
 #include <sys/wait.h>
 

@@ -7,6 +7,8 @@
   - [Fork](Kernel/Processes/Fork.md)
   - [Execution](Kernel/Processes/Execution.md)
   - [Exit](Kernel/Processes/Exit.md)
+- [Memory Management](Kernel/Memory/README.md)
+  - [CS:APP Malloc Lab](Kernel/Memory/Malloc%20Lab.md)
 - [Signals](Kernel/Signals/README.md)
 
 ## [Distributions](Distributions/README.md)

@@ -8,6 +8,7 @@
   - [Execution](Kernel/Processes/Execution.md)
   - [Exit](Kernel/Processes/Exit.md)
 - [Memory Management](Kernel/Memory/README.md)
+  - [Garbage Collection](Kernel/Memory/Garbage%20Collection.md)
   - [CS:APP Malloc Lab](Kernel/Memory/Malloc%20Lab.md)
 - [Signals](Kernel/Signals/README.md)
 

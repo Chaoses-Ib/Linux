@@ -8,8 +8,10 @@
   - [Execution](Kernel/Processes/Execution.md)
   - [Exit](Kernel/Processes/Exit.md)
 - [Memory Management](Kernel/Memory/README.md)
-  - [Garbage Collection](Kernel/Memory/Garbage%20Collection.md)
-  - [CS:APP Malloc Lab](Kernel/Memory/Malloc%20Lab.md)
+  - [Virtual Memory](Kernel/Memory/Virtual/README.md)
+  - [Manual Memory Management](Kernel/Memory/Manual/README.md)
+    - [CS:APP Malloc Lab](Kernel/Memory/Manual/Malloc%20Lab.md)
+  - [Automatic Memory Management](Kernel/Memory/Automatic/README.md)
 - [Signals](Kernel/Signals/README.md)
 
 ## [Distributions](Distributions/README.md)
@@ -24,3 +26,8 @@
 - [Android App Bundles](Distributions/Android/Applications/Android%20App%20Bundles.md)
 - [ReVanced](Distributions/Android/Applications/ReVanced.md)
 - [Launchers](Distributions/Android/Applications/Launchers.md)
+
+## Information sources
+Books:
+- Computer Systems：A Programmer's Perspective
+- How Linux Works

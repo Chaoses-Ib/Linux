@@ -13,6 +13,7 @@
     - [CS:APP Malloc Lab](Kernel/Memory/Manual/Malloc%20Lab.md)
   - [Automatic Memory Management](Kernel/Memory/Automatic/README.md)
 - [Signals](Kernel/Signals/README.md)
+- [xv6](Kernel/xv6.md)
 
 ## [Distributions](Distributions/README.md)
 ### [Android](Distributions/Android/README.md)
@@ -28,6 +29,8 @@
 - [Launchers](Distributions/Android/Applications/Launchers.md)
 
 ## Information sources
-Books:
+<details><summary>Books</summary>
+
 - Computer Systems：A Programmer's Perspective
 - How Linux Works
+</details>

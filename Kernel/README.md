@@ -1,4 +1,8 @@
-# Kernel
+# Linux Kernel
+[Wikipedia](https://en.wikipedia.org/wiki/Linux_kernel)
+
+![](https://upload.wikimedia.org/wikipedia/commons/5/5b/Linux_kernel_map.png)
+
 ## Header files
 [^header-wiki]
 Header file | Standard | Description

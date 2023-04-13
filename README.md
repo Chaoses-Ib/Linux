@@ -3,7 +3,8 @@
 
 ## [Kernel](Kernel/README.md)
 - [Exceptions](Kernel/Exceptions/README.md)
-- Processes
+- [Processes](Kernel/Processes/README.md)
+  - [Scheduling](Kernel/Processes/Scheduling/README.md)
   - [Fork](Kernel/Processes/Fork.md)
   - [Execution](Kernel/Processes/Execution.md)
   - [Exit](Kernel/Processes/Exit.md)
@@ -31,6 +32,7 @@
 ## Information sources
 <details><summary>Books</summary>
 
-- Computer Systems：A Programmer's Perspective
+- Computer Systems: A Programmer's Perspective
+- Operating Systems: Three Easy Pieces
 - How Linux Works
 </details>

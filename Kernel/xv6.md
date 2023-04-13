@@ -1,7 +1,7 @@
 # xv6
 [Wikipedia](https://en.wikipedia.org/wiki/Xv6)
 
-Implementation:
+Implementations:
 - RISC-V: [mit-pdos/xv6-riscv](https://github.com/mit-pdos/xv6-riscv)
 - x86: [mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
   - [pandax381/xv6-net: xv6 OS with TCP/IP Network Stack](https://github.com/pandax381/xv6-net)
@@ -30,4 +30,18 @@ Implementation:
     return buf;
   }
   ```
-  
+- 支持 stderr：
+
+  ```c
+  if(open("console", O_RDWR) < 0){
+    mknod("console", 1, 1);
+    open("console", O_RDWR);
+  }
+  dup(0);  // stdout
+  dup(0);  // stderr
+  ```
+  ```c
+  #define STDIN 0
+  #define STDOUT 1
+  #define STDERR 2
+  ```

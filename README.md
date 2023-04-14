@@ -10,6 +10,7 @@
   - [Exit](Kernel/Processes/Exit.md)
 - [Memory Management](Kernel/Memory/README.md)
   - [Virtual Memory](Kernel/Memory/Virtual/README.md)
+    - [Swapping](Kernel/Memory/Virtual/Swapping.md)
   - [Manual Memory Management](Kernel/Memory/Manual/README.md)
     - [CS:APP Malloc Lab](Kernel/Memory/Manual/Malloc%20Lab.md)
   - [Automatic Memory Management](Kernel/Memory/Automatic/README.md)

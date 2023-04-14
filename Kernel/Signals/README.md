@@ -12,9 +12,9 @@ Number | Name | Default action | Corresponding event
 7 | SIGBUS | Terminate | Bus error
 8 | SIGFPE | Terminate and dump core | Floating-point exception
 9 | SIGKILL | Terminate | Kill program
-10 | SIGUSR1 | Terminate | User-deﬁned signal 1
+10 | SIGUSR1 | Terminate | User-defined signal 1
 11 | SIGSEGV | Terminate and dump core | Invalid memory reference (seg fault)
-12 | SIGUSR2 | Terminate | User-deﬁned signal 2
+12 | SIGUSR2 | Terminate | User-defined signal 2
 13 | SIGPIPE | Terminate | Wrote to a pipe with no reader
 14 | SIGALRM | Terminate | Timer signal from `alarm()`
 15 | SIGTERM | Terminate | Software termination signal
@@ -29,7 +29,7 @@ Number | Name | Default action | Corresponding event
 24 | SIGXCPU | Terminate | CPU time limit exceeded
 25 | SIGXFSZ | Terminate | File size limit exceeded
 26 | SIGVTALRM | Terminate | Virtual timer expired
-27 | SIGPROF | Terminate | Proﬁling timer expired
+27 | SIGPROF | Terminate | Profiling timer expired
 28 | SIGWINCH | Ignore | Window size changed
 29 | SIGIO | Terminate | I/O now possible on a descriptor
 30 | SIGPWR | Terminate | Power failure
@@ -54,7 +54,7 @@ Blocking mechanism:
 When the kernel switches a process *p* from kernel mode to user mode, it checks the set of unblocked pending signals (`pending & ~blocked`) for *p*. However, if the set is nonempty, then the kernel chooses some signal *k* in the set (typically the smallest *k*) and forces *p* to receive signal *k*.[^csapp]
 
 ## Receiving
-Each signal type has a predeﬁned *default action*, which is one of the following[^csapp]:
+Each signal type has a predefined *default action*, which is one of the following[^csapp]:
 - The process terminates
 - The process terminates and dumps core
 - The process stops (suspends) until restarted by a SIGCONT signal

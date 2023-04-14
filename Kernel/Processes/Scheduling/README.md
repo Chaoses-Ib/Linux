@@ -56,7 +56,7 @@ I/O:
 
   The MLFQ has a number of distinct **queues**, each assigned a different **priority level**. At any given time, a job that is ready to run is on a single queue. MLFQ uses priorities to decide which job should run at a given time. If more than one job is in a given queue, MLFQ will just use round-robin scheduling. MLFQ 通过 queues 实现了 SJF 和 round-robin 的折中。
 
-  Rather than giving a ﬁxed priority to each job, MLFQ varies the priority of a job based on its observed behavior:
+  Rather than giving a fixed priority to each job, MLFQ varies the priority of a job based on its observed behavior:
   - When a job enters the system, it is placed at the highest priority (the topmost queue).
   - Once a job uses up its time allotment at a given level (regardless of how many times it has given up the CPU), its priority is reduced (i.e., it moves down one queue).
   

@@ -36,6 +36,16 @@ Fairness metrics:
   
   几乎所有的现代 scheduler 都是 preemptive 的，即可以打断当前 workload 的执行。
 
+- [Highest response ratio next](https://en.wikipedia.org/wiki/Highest_response_ratio_next) (highest penalty ratio next)
+  
+  In HRRN, the next job is the job with the highest response ratio:
+
+  $$\text{response ratio}
+  ={\text{wating time of a process so far + estimated run time} \over \text{estimated run time}}
+  =1 + {\text{wating time of a process so far} \over \text{estimated run time}}$$
+
+  In practice, HRRN may incur too many context switches.
+
 - Round-Robin (time-slicing)
 
   Instead of running jobs to completion, RR runs a job for a **time slice (scheduling quantum)** and then switches to the next job in the run queue.
@@ -52,6 +62,8 @@ I/O:
   以 I/O 操作为界限，将 job 分割为多个 sub-job 进行调度，从而实现允许 overlap。
 
 ### The runtime of each job is unknown
+- Exponentially weighted moving average (EMA)
+
 - Multi-level Feedback Queue (MLFQ)
 
   The MLFQ has a number of distinct **queues**, each assigned a different **priority level**. At any given time, a job that is ready to run is on a single queue. MLFQ uses priorities to decide which job should run at a given time. If more than one job is in a given queue, MLFQ will just use round-robin scheduling. MLFQ 通过 queues 实现了 SJF 和 round-robin 的折中。

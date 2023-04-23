@@ -1,10 +1,12 @@
-# Linux
+# [Linux](Linux.md)
 - [Unix-like](Unix-like.md)
 
 ## [Kernel](Kernel/README.md)
 - [Exceptions](Kernel/Exceptions/README.md)
 - [Processes](Kernel/Processes/README.md)
   - [Scheduling](Kernel/Processes/Scheduling/README.md)
+    - [Proportional-share Scheduling](Kernel/Processes/Scheduling/Proportional-share.md)
+      - [Completely Fair Scheduler](Kernel/Processes/Scheduling/Completely%20Fair%20Scheduler.md)
   - [Fork](Kernel/Processes/Fork.md)
   - [Execution](Kernel/Processes/Execution.md)
   - [Exit](Kernel/Processes/Exit.md)
@@ -33,13 +35,3 @@
 - [Android App Bundles](Distributions/Android/Applications/Android%20App%20Bundles.md)
 - [ReVanced](Distributions/Android/Applications/ReVanced.md)
 - [Launchers](Distributions/Android/Applications/Launchers.md)
-
-## Information sources
-<details><summary>Books</summary>
-
-- Computer Systems: A Programmer's Perspective
-- Operating Systems: Three Easy Pieces
-
-  内容完备、幽默风趣。
-- How Linux Works
-</details>

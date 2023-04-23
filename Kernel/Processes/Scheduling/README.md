@@ -2,7 +2,7 @@
 [Wikipedia](https://en.wikipedia.org/wiki/Scheduling_(computing))
 
 ## Scheduling metrics
-Performance metrics:
+Performance metrics[^three]:
 - Turnaround time
 
   The turnaround time of a job is defined as the time at which the job completes minus the time at which the job arrived in the system:
@@ -20,15 +20,15 @@ Fairness metrics:
 
 ## Policies
 ### The runtime of each job is known
-- First in, first out (first come, first served)
+- First in, first out (first come, first served)[^three]
 
   Convoy effect：在先被加入的 workload 需要很长时间时平均 turnaround time 会很大。
 
-- Shorted job first
+- Shorted job first[^three]
 
   在所有 workload 同时到达的情况下，SJF 对于平均 turnaround time 是最优的。
 
-- Shortest time-to-completion first (STCF, preemptive SJF)
+- Shortest time-to-completion first (STCF, preemptive SJF)[^three]
 
   在 workload 到达时 preempt 当前 workload，执行剩余时间最短的 workload。
 
@@ -46,7 +46,7 @@ Fairness metrics:
 
   In practice, HRRN may incur too many context switches.
 
-- Round-Robin (time-slicing)
+- Round-Robin (time-slicing)[^three]
 
   Instead of running jobs to completion, RR runs a job for a **time slice (scheduling quantum)** and then switches to the next job in the run queue.
 
@@ -64,7 +64,7 @@ I/O:
 ### The runtime of each job is unknown
 - Exponentially weighted moving average (EMA)
 
-- Multi-level Feedback Queue (MLFQ)
+- Multi-level Feedback Queue (MLFQ)[^three]
 
   The MLFQ has a number of distinct **queues**, each assigned a different **priority level**. At any given time, a job that is ready to run is on a single queue. MLFQ uses priorities to decide which job should run at a given time. If more than one job is in a given queue, MLFQ will just use round-robin scheduling. MLFQ 通过 queues 实现了 SJF 和 round-robin 的折中。
 
@@ -80,3 +80,6 @@ I/O:
   MLFQ optimizes turnaround time and response time.
 
   Many systems, including BSD UNIX derivatives, Solaris, and Windows NT and subsequent Windows operating systems use a form of MLFQ as their base scheduler.
+
+
+[^three]: Operating Systems: Three Easy Pieces

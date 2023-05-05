@@ -17,6 +17,8 @@
     - [CS:APP Malloc Lab](Kernel/Memory/Manual/Malloc%20Lab.md)
   - [Automatic Memory Management](Kernel/Memory/Automatic/README.md)
 - [Signals](Kernel/Signals/README.md)
+- [File Systems](Kernel/File%20Systems/README.md)
+  - [File Change Monitoring](Kernel/File%20Systems/Monitoring.md)
 - [xv6](Kernel/xv6.md)
 
 ## [Virtualization](Virtualization/README.md)

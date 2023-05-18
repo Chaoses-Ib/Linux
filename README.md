@@ -2,7 +2,6 @@
 - [Unix-like](Unix-like.md)
 
 ## [Kernel](Kernel/README.md)
-- [Exceptions](Kernel/Exceptions/README.md)
 - [Processes](Kernel/Processes/README.md)
   - [Scheduling](Kernel/Processes/Scheduling/README.md)
     - [Proportional-share Scheduling](Kernel/Processes/Scheduling/Proportional-share.md)
@@ -16,7 +15,8 @@
   - [Manual Memory Management](Kernel/Memory/Manual/README.md)
     - [CS:APP Malloc Lab](Kernel/Memory/Manual/Malloc%20Lab.md)
   - [Automatic Memory Management](Kernel/Memory/Automatic/README.md)
-- [Signals](Kernel/Signals/README.md)
+- [Exceptions](Kernel/Exceptions/README.md)
+  - [Signals](Kernel/Exceptions/Signals.md)
 - [File Systems](Kernel/File%20Systems/README.md)
   - [File Change Monitoring](Kernel/File%20Systems/Monitoring.md)
 - [xv6](Kernel/xv6.md)

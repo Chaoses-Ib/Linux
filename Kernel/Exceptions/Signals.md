@@ -1,5 +1,11 @@
 # Signals
-Signals[^csapp]:
+[Wikipedia](https://en.wikipedia.org/wiki/Signal_(IPC))
+
+A **signal** is a small message that notiﬁes a process that an event of some type has occurred in the system.[^csapp]
+
+Signals are similar to interrupts, the difference being that interrupts are mediated by the CPU and handled by the kernel while signals are mediated by the kernel (possibly via system calls) and handled by individual processes. The kernel may pass an interrupt as a signal to the process that caused it (typical examples are SIGSEGV, SIGBUS, SIGILL and SIGFPE).[^wiki]
+
+Linux signals[^csapp]:
 
 Number | Name | Default action | Corresponding event
 --- | --- | --- | ---
@@ -62,4 +68,5 @@ Each signal type has a predefined *default action*, which is one of the followin
 
 The `signal()` can change the action associated with a signal *signum*.
 
+[^wiki]: [Signal (IPC) - Wikipedia](https://en.wikipedia.org/wiki/Signal_(IPC))
 [^csapp]: Computer Systems：A Programmer's Perspective

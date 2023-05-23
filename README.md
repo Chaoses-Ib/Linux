@@ -9,6 +9,8 @@
   - [Fork](Kernel/Processes/Fork.md)
   - [Execution](Kernel/Processes/Execution.md)
   - [Exit](Kernel/Processes/Exit.md)
+  - [Threads](Kernel/Processes/Threads.md)
+  - [→Inter-Process Communication](https://github.com/Chaoses-Ib/ConcurrentComputing/blob/main/Distributed/IPC/README.md)
 - [Memory Management](Kernel/Memory/README.md)
   - [Virtual Memory](Kernel/Memory/Virtual/README.md)
     - [Swapping](Kernel/Memory/Virtual/Swapping.md)

@@ -8,6 +8,9 @@ Growing incompatibility among these systems led to the creation of interoperabil
 ## POSIX
 The **Portable Operating System Interface (POSIX)** is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines both the system- and user-level application programming interfaces (API), along with command line shells and utility interfaces, for software compatibility (portability) with variants of Unix and other operating systems. POSIX is also a trademark of the IEEE. POSIX is intended to be used by both application and system developers.[^posix-wiki]
 
+Versions:
+- [POSIX.1-2017: The Open Group Base Specifications Issue 7, 2018 edition](https://pubs.opengroup.org/onlinepubs/9699919799.2018edition/)
+
 ## Single UNIX Specification
 The **Single UNIX Specification (SUS)** is a standard for computer operating systems, compliance with which is required to qualify for using the "UNIX" trademark. The standard specifies programming interfaces for the C language, a command-line shell, and user commands. The latest SUS consists of two parts: the base specifications technically identical to POSIX, and X/Open Curses specification. 
 

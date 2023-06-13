@@ -17,21 +17,24 @@
 - Web
   - Electron
   - React Native
-- .NET
-  - MAUI
-
-    [MauiAppJnilibSample: MAUI application sample using services from a java library.](https://github.com/arvindd/MauiAppJnilibSample)
-  - [Avalonia](https://avaloniaui.net/)
-  - Uno
-  
-  [MAUI vs Avalonia : csharp](https://www.reddit.com/r/csharp/comments/zzmwux/maui_vs_avalonia/)
+- [→.NET](https://github.com/Chaoses-Ib/.NET/blob/main/CLI/Platforms/Android.md)
+  - [→MAUI](https://github.com/Chaoses-Ib/.NET/blob/main/Libraries/GUI/MAUI/README.md)
+  - [→Avalonia](https://github.com/Chaoses-Ib/.NET/blob/main/Libraries/GUI/Avalonia/README.md)
+  - [→Uno](https://github.com/Chaoses-Ib/.NET/blob/main/Libraries/GUI/MAUI/README.md)
 - Flutter
 - Python
   - [Kivy on Android](https://kivy.org/doc/stable/guide/android.html)
+    - [Kivy: Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS](https://github.com/kivy/kivy)
+
+      开发放缓。
     - [PyJNIus: Access Java classes from Python](https://github.com/kivy/pyjnius)
       - [Plyer: A platform-independent Python wrapper for platform-dependent APIs](https://github.com/kivy/plyer)
     - [python-for-android](https://github.com/kivy/python-for-android)
   - [BeeWare](https://beeware.org/)
+    - [Toga: A Python native, OS native GUI toolkit.](https://github.com/beeware/toga)
+
+      Only two core contributors.
+    - [Briefcase: Tools to support converting a Python project into a standalone native application.](https://github.com/beeware/briefcase)
 
     [Beeware – Android and iOS Apps in Python | Hacker News](https://news.ycombinator.com/item?id=24487867)
 

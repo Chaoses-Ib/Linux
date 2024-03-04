@@ -22,5 +22,14 @@ Phones[^phones-zhihu]:
 Installers:
 - [Go安装器](https://www.coolapk.com/apk/com.goplaycn.googleinstall)
 
-
 [^phones-zhihu]: [除了华为，还有哪些国产手机是自带谷歌服务框架的？ - 知乎](https://www.zhihu.com/question/27742824)
+
+## [microG Project](https://microg.org/)
+[GitHub](https://github.com/microg/GmsCore)
+
+[microG Installer Revived: Install microG GmsCore, GsfProxy, FakeStore (or Play Store if you want so) and MapsV1 to /system/](https://github.com/nift4/microg_installer_revived)
+
+Signature spoofing:
+- Xposed: [FakeGApps: Signature spoofing for MicroG as an Xposed module](https://github.com/whew-inc/FakeGApps)
+
+[→ReVanced](ReVanced.md)

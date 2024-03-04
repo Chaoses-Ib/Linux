@@ -57,3 +57,10 @@
 ## Information sources
 Blogs:
 - [Android Developers Blog](https://android-developers.googleblog.com/)
+
+Forums:
+- [LetITFly BBS](https://bbs.letitfly.me/)
+
+  > LetITFly BBS（中文名: 让技术飞论坛），让 Android 回归它原本的样子。  
+  > LetITFly BBS 的前身是 MAT BBS，但并不局限于 MyAndroidTools。  
+  > 我们致力于让 Android 的使用体验更好，同时我们也讨论 Windows 和 GNU/Linux 相关。  

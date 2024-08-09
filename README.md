@@ -27,6 +27,7 @@
 - [Sensors](Distributions/Android/Sensors/README.md)
 
 #### GUI
+- [Remote Desktops](Distributions/Android/GUI/Remote.md)
 - [WebView](Distributions/Android/GUI/WebView.md)
 
 #### Applications

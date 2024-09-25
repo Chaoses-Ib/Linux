@@ -34,5 +34,6 @@
 - [Android Packages](Distributions/Android/Applications/Android%20Packages.md)
 - [Android App Bundles](Distributions/Android/Applications/Android%20App%20Bundles.md)
 - [Google Mobile Services](Distributions/Android/Applications/Google%20Mobile%20Services.md)
+- [Stores](Distributions/Android/Applications/Stores.md)
 - [ReVanced](Distributions/Android/Applications/ReVanced.md)
 - [Launchers](Distributions/Android/Applications/Launchers.md)

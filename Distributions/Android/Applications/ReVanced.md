@@ -3,6 +3,16 @@
 - [ReVanced Manager](https://github.com/revanced/revanced-manager)
 - [Patcher](https://github.com/revanced/revanced-patcher)
 - [Patches](https://revanced.app/patches) ([GitHub](https://github.com/revanced/revanced-patches))
+  - [inotia00/revanced-patches](https://github.com/inotia00/revanced-patches)
+
+[revanced-magisk-module: Extensive ReVanced builder. Builds both modules and APKs. Updated daily.](https://github.com/j-hc/revanced-magisk-module)
+- Can build Magisk modules and non-root APKs
+
+[revanced-apks/build-apps: The ReVanced APKs](https://github.com/revanced-apks/build-apps)
+
+[YouTube revanced keeps crashing, just built it, rooted device and rooted build, what do I do? : r/revancedapp](https://www.reddit.com/r/revancedapp/comments/xx1n82/youtube_revanced_keeps_crashing_just_built_it/)
+
+[Youtube revanced crashes instantly on opening. Any ideas why? : r/revancedapp](https://www.reddit.com/r/revancedapp/comments/116mtnn/youtube_revanced_crashes_instantly_on_opening_any/)
 
 ## GMS
 - Mount installation can be used with GMS, but requires root.

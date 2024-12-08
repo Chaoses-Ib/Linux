@@ -15,6 +15,8 @@
   - [Signals](Kernel/Exceptions/Signals.md)
 - [→Memory Management](https://github.com/Chaoses-Ib/InformationSystems#memory-management)
 - [→File Systems](https://github.com/Chaoses-Ib/InformationSystems#file-systems)
+- [Modules](Kernel/Modules/README.md)
+- [Build](Kernel/Build/README.md)
 - [xv6](Kernel/xv6.md)
 
 ## [Virtualization](Virtualization/README.md)
@@ -22,6 +24,8 @@
   - [Containers](Virtualization/Docker/Containers.md)
 
 ## [Distributions](Distributions/README.md)
+- [Windows Subsystem for Linux 2 (WSL2)](Distributions/WSL2/README.md)
+
 ### [Android](Distributions/Android/README.md)
 - [Linux Distributions on Android](Distributions/Android/Linux%20Distributions%20on%20Android.md)
 - [Sensors](Distributions/Android/Sensors/README.md)

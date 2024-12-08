@@ -18,7 +18,10 @@ The only difference between the WSL2 kernel and the mainline kernel is the confi
 [How does wsl2 install its own kernel into a distribution. : r/bashonubuntuonwindows](https://www.reddit.com/r/bashonubuntuonwindows/comments/15y99q6/how_does_wsl2_install_its_own_kernel_into_a/)
 
 Build:
+- `cp Microsoft/config-wsl .config`
 - [在WSL2中啟用BBR. 名詞解釋 | by Roger | Medium](https://ch010060.medium.com/%E5%9C%A8wsl2%E4%B8%AD%E5%95%9F%E7%94%A8bbr-51516f906c72)
 - [为你的WSL2编译属于自己的6.x内核并且开启BBR加速 -- 墨羽无痕的博客](https://blog.wilxx.com/archives/132)
+
+["Your kernel headers for kernel 5.4.72-microsoft-standard-WSL2 cannot be found." - microsoft/WSL - Discussion #6650](https://github.com/microsoft/WSL/discussions/6650)
 
 [Microsoft's WSL2 Transitions To Linux 6.6 LTS Kernel - Phoronix](https://www.phoronix.com/news/Microsoft-WSL2-Linux-6.6-Kernel)

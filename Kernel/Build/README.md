@@ -9,6 +9,18 @@
 
 [Kernel Configuration](https://tldp.org/HOWTO/SCSI-2.4-HOWTO/kconfig.html)
 
+## Headers
+[Exporting kernel headers for use by userspace --- The Linux Kernel documentation](https://www.kernel.org/doc/html/latest/kbuild/headers_install.html)
+- `make headers_install`
+  - `/usr/include/asm` is missing?
+- `make headers_install INSTALL_HDR_PATH=/usr/src/linux-headers-$(uname -r)`
+
+[asm vs asm-generic in linux headers -- are they same - Stack Overflow](https://stackoverflow.com/questions/65591871/asm-vs-asm-generic-in-linux-headers-are-they-same)
+
+[kernel - Missing asm/types.h file - Ask Ubuntu](https://askubuntu.com/questions/390253/missing-asm-types-h-file/1495186)
+
+[linux module compilng missed folder asm - Stack Overflow](https://stackoverflow.com/questions/11730181/linux-module-compilng-missed-folder-asm)
+
 ## Troubleshooting
 - Source code corruption
   
@@ -70,3 +82,36 @@
   
   [Trying to compile a kernel results in "FAILED: load BTF from vmlinux: No such file or directory" - Issue #10299 - microsoft/WSL](https://github.com/microsoft/WSL/issues/10299)
   - 9G is enough for building WSL2.
+
+- `__NR_syscalls`?
+
+  ```sh
+  In file included from ./include/linux/export.h:5,
+                  from ./include/linux/linkage.h:7,
+                  from ./include/linux/kernel.h:17,
+                  from arch/x86/entry/common.c:10:
+  arch/x86/entry/common.c: In function ‘do_syscall_x64’:
+  ./arch/x86/include/asm/unistd.h:35:23: error: ‘__NR_syscalls’ undeclared (first use in this function); did you mean ‘NR_syscalls’?
+    35 | # define NR_syscalls (__NR_syscalls)
+        |                       ^~~~~~~~~~~~~
+  ./include/linux/compiler.h:76:45: note: in definition of macro ‘likely’
+    76 | # define likely(x)      __builtin_expect(!!(x), 1)
+        |                                             ^
+  arch/x86/entry/common.c:49:26: note: in expansion of macro ‘NR_syscalls’
+    49 |         if (likely(unr < NR_syscalls)) {
+        |                          ^~~~~~~~~~~
+  ./arch/x86/include/asm/unistd.h:35:23: note: each undeclared identifier is reported only once for each function it appears in
+    35 | # define NR_syscalls (__NR_syscalls)
+        |                       ^~~~~~~~~~~~~
+  ./include/linux/compiler.h:76:45: note: in definition of macro ‘likely’
+    76 | # define likely(x)      __builtin_expect(!!(x), 1)
+        |                                             ^
+  arch/x86/entry/common.c:49:26: note: in expansion of macro ‘NR_syscalls’
+    49 |         if (likely(unr < NR_syscalls)) {
+        |                          ^~~~~~~~~~~
+  make[4]: *** [scripts/Makefile.build:243: arch/x86/entry/common.o] Error 1
+  make[3]: *** [scripts/Makefile.build:480: arch/x86/entry] Error 2
+  make[2]: *** [scripts/Makefile.build:480: arch/x86] Error 2
+  make[1]: *** [/root/WSL2-Linux-Kernel/Makefile:1921: .] Error 2
+  make: *** [Makefile:234: __sub-make] Error 2
+  ```

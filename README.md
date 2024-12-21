@@ -11,6 +11,7 @@
   - [Exit](Kernel/Processes/Exit.md)
   - [Threads](Kernel/Processes/Threads.md)
   - [Environment Variables](Kernel/Processes/Environment.md)
+  - [Daemons](Kernel/Processes/Daemons/README.md)
   - [→Inter-Process Communication](https://github.com/Chaoses-Ib/ConcurrentComputing/blob/main/Distributed/IPC/README.md)
 - [Exceptions](Kernel/Exceptions/README.md)
   - [Signals](Kernel/Exceptions/Signals.md)

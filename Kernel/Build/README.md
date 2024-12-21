@@ -83,7 +83,7 @@
   [Trying to compile a kernel results in "FAILED: load BTF from vmlinux: No such file or directory" - Issue #10299 - microsoft/WSL](https://github.com/microsoft/WSL/issues/10299)
   - 9G is enough for building WSL2.
 
-- `__NR_syscalls`?
+- `__NR_syscalls` undeclared: Source code corruption / `include/asm`?
 
   ```sh
   In file included from ./include/linux/export.h:5,

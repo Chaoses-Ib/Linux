@@ -30,6 +30,7 @@
 
 ### [Android](Distributions/Android/README.md)
 - [Linux Distributions on Android](Distributions/Android/Linux%20Distributions%20on%20Android.md)
+- [Rooting](Distributions/Android/Rooting/README.md)
 - [Sensors](Distributions/Android/Sensors/README.md)
 
 #### GUI

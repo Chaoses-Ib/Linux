@@ -68,5 +68,16 @@ Each signal type has a predefined *default action*, which is one of the followin
 
 The `signal()` can change the action associated with a signal *signum*.
 
+## Libraries
+Rust:
+- [rust-ctrlc: Easy Ctrl-C handler for Rust projects](https://github.com/Detegr/rust-ctrlc) ([Docs.rs](https://docs.rs/ctrlc/latest/ctrlc/))
+  - Linux, Windows
+- [signal-hook: Rust library allowing to register multiple handlers for the same signal](https://github.com/vorner/signal-hook) ([Docs.rs](https://docs.rs/signal-hook/latest/signal_hook/))
+  - Linux
+  - Windows: `SIGTERM` isn't actually used and not all `Ctrl-C`s are turned into `SIGINT`.
+
+[Signal handling - Command Line Applications in Rust](https://rust-cli.github.io/book/in-depth/signals.html)
+
+
 [^wiki]: [Signal (IPC) - Wikipedia](https://en.wikipedia.org/wiki/Signal_(IPC))
 [^csapp]: Computer Systems：A Programmer's Perspective

@@ -22,7 +22,7 @@
 - [xv6](Kernel/xv6.md)
 
 ## [Virtualization](Virtualization/README.md)
-- Docker
+- [Docker](Virtualization/Docker/README.md)
   - [Docker.0](Virtualization/Docker/Docker.0.md)
   - [Docker.1](Virtualization/Docker/Docker.1.md)
   - [Docker.2](Virtualization/Docker/Docker.2.md)
@@ -37,6 +37,7 @@
   - [Dev Environments](Virtualization/Docker/Dev%20Environments.md)
   - [Extensions](Virtualization/Docker/Extensions.md)
   - [WSL 2 Backend](Virtualization/Docker/WSL%202%20Backend.md)
+  - [Docker Desktop](Virtualization/Docker/Desktop.md)
   - [Windows Container](Virtualization/Docker/Windows%20Container.md)
 
 ## [Distributions](Distributions/README.md)

@@ -49,9 +49,9 @@
   [How to develop Android app completely using python? - Stack Overflow](https://stackoverflow.com/questions/49955489/how-to-develop-android-app-completely-using-python)
 - Go
 
-## Applications
+## [Applications](Applications/README.md)
 - [Android Packages](Applications/Android%20Packages.md)
-- [Android App Bundles](Applications/Android%20App%20Bundles.md)
+- [Android App Bundles](Applications/Bundles.md)
 - [Launchers](Applications/Launchers.md)
 
 ## Information sources

@@ -54,9 +54,9 @@
 - [Remote Desktops](Distributions/Android/GUI/Remote.md)
 - [WebView](Distributions/Android/GUI/WebView.md)
 
-#### Applications
+#### [Applications](Distributions/Android/Applications/README.md)
 - [Android Packages](Distributions/Android/Applications/Android%20Packages.md)
-- [Android App Bundles](Distributions/Android/Applications/Android%20App%20Bundles.md)
+- [Android App Bundles](Distributions/Android/Applications/Bundles.md)
 - [Google Mobile Services](Distributions/Android/Applications/Google%20Mobile%20Services.md)
 - [Stores](Distributions/Android/Applications/Stores.md)
 - [ReVanced](Distributions/Android/Applications/ReVanced.md)

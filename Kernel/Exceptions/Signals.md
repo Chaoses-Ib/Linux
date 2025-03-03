@@ -40,6 +40,8 @@ Number | Name | Default action | Corresponding event
 29 | SIGIO | Terminate | I/O now possible on a descriptor
 30 | SIGPWR | Terminate | Power failure
 
+Windows: [→Console control events](https://github.com/Chaoses-Ib/Windows/blob/main/Kernel/Processes/Console/README.md#console-control-handlers)
+
 ## Sending
 - System events
   
@@ -68,13 +70,16 @@ Each signal type has a predefined *default action*, which is one of the followin
 
 The `signal()` can change the action associated with a signal *signum*.
 
-## Libraries
+[c - What is the difference between sigaction and signal? - Stack Overflow](https://stackoverflow.com/questions/231912/what-is-the-difference-between-sigaction-and-signal)
+
+### Libraries
 Rust:
 - [rust-ctrlc: Easy Ctrl-C handler for Rust projects](https://github.com/Detegr/rust-ctrlc) ([Docs.rs](https://docs.rs/ctrlc/latest/ctrlc/))
   - Linux, Windows
 - [signal-hook: Rust library allowing to register multiple handlers for the same signal](https://github.com/vorner/signal-hook) ([Docs.rs](https://docs.rs/signal-hook/latest/signal_hook/))
   - Linux
   - Windows: `SIGTERM` isn't actually used and not all `Ctrl-C`s are turned into `SIGINT`.
+- [wintrap-rs: Windows signal trapping for rust](https://github.com/elizagamedev/wintrap-rs)
 
 [Signal handling - Command Line Applications in Rust](https://rust-cli.github.io/book/in-depth/signals.html)
 

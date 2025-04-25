@@ -1,5 +1,9 @@
 # Linux
+[Wikipedia](https://en.wikipedia.org/wiki/Linux_kernel)
+
 The core of operaing systems is **interfaces**, not execution. Interfaces are not only hardware interfaces (HAL), but also software interfaces (API).
+
+[Linux kernel version history - Wikipedia](https://en.wikipedia.org/wiki/Linux_kernel_version_history)
 
 Books:
 - Computer Systems: A Programmer's Perspective

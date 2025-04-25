@@ -41,7 +41,7 @@
   - [Windows Container](Virtualization/Docker/Windows%20Container.md)
 
 ## [Distributions](Distributions/README.md)
-- Debian
+- [Debian](Distributions/Debian/README.md)
   - [Ubuntu](Distributions/Debian/Ubuntu/README.md)
 - [Windows Subsystem for Linux 2 (WSL2)](Distributions/WSL2/README.md)
 

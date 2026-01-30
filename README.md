@@ -19,7 +19,10 @@
 - [→File Systems](https://github.com/Chaoses-Ib/InformationSystems#file-systems)
 - [Modules](Kernel/Modules/README.md)
 - [Build](Kernel/Build/README.md)
+- [sysctl](Kernel/sysctl.typ)
 - [xv6](Kernel/xv6.md)
+- [init Systems](Kernel/init/README.typ)
+  - [systemd](Kernel/init/systemd/README.typ)
 
 ## [Virtualization](Virtualization/README.md)
 - [Docker](Virtualization/Docker/README.md)

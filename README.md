@@ -44,6 +44,10 @@
   - [Docker Desktop](Virtualization/Docker/Desktop.md)
   - [Windows Container](Virtualization/Docker/Windows%20Container.md)
 
+## UI
+### GUI
+- [Remote Desktops](UI/GUI/Remote/README.typ)
+
 ## [Distributions](Distributions/README.md)
 - [Debian](Distributions/Debian/README.md)
   - [Ubuntu](Distributions/Debian/Ubuntu/README.md)

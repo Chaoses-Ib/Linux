@@ -46,6 +46,8 @@
 
 ## UI
 ### GUI
+- [X Window System](UI/GUI/X/README.typ)
+- [Wayland](UI/GUI/Wayland/README.typ)
 - [Remote Desktops](UI/GUI/Remote/README.typ)
 
 ## [Distributions](Distributions/README.md)

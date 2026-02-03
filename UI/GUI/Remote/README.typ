@@ -5,6 +5,10 @@
 
 #a[Headless - ArchWiki][https://wiki.archlinux.org/title/Headless]
 
+#a[RDP into Headless Ubuntu 22.04 : r/HomeServer][https://www.reddit.com/r/HomeServer/comments/xbl0pc/rdp_into_headless_ubuntu_2204/]
+
+#a[Remote desktop environment for a Debian headless server on a lan connection? : r/linuxquestions][https://www.reddit.com/r/linuxquestions/comments/q8u0rl/remote_desktop_environment_for_a_debian_headless/]
+
 = Protocols
 #a[networking - What's the difference between RDP vs VNC? - Super User][https://superuser.com/questions/32495/whats-the-difference-between-rdp-vs-vnc]
 - #q[RDP is semantic. The RDP is aware of controls, fonts, and other similar graphical primitives.
@@ -31,6 +35,8 @@
   #a[Headless Linux Support - rustdesk/rustdesk Wiki][https://github.com/rustdesk/rustdesk/wiki/Headless-Linux-Support]
 - AnyDesk
 
+#a[xorg - Run wine totally headless - Super User][https://superuser.com/questions/902175/run-wine-totally-headless/948200#948200]
+
 #a[What's a good RDP Server on Linux? | Hacker News][https://news.ycombinator.com/item?id=30694601]
 
 #a[What is Microsoft RDP server alternative on linux? : r/linuxquestions][https://www.reddit.com/r/linuxquestions/comments/xqhnsz/what_is_microsoft_rdp_server_alternative_on_linux/]
@@ -41,6 +47,10 @@
 
 #a[Best performing remote desktop server for linux : r/linuxmasterrace][https://www.reddit.com/r/linuxmasterrace/comments/yapdaw/best_performing_remote_desktop_server_for_linux/]
 
+#a[Looking for the Best Remote Desktop Solution for Linux: Any Recommendations? : r/Ubuntu][https://www.reddit.com/r/Ubuntu/comments/1f6ewa0/looking_for_the_best_remote_desktop_solution_for/]
+- #q[As for VNC ... after having experienced the performance of things like X2go, Thinlinc and Nomachine I'd never again consider VNC for anything.
+  It can't do sound-forwarding, it can't do folder-forwarding, it can't do printer-forwarding, and it is usually super laggy and might require a lot of tuning and fiddling with e.g. SSH connection parameters to squeeze out some performance. Meh. There are better and more modern solutions these days.]
+
 == VNC
 #a-badge[https://en.wikipedia.org/wiki/VNC]
 
@@ -48,7 +58,7 @@
   #a-badge[https://wiki.archlinux.org/title/TigerVNC]
 
 == #a[RDP][https://github.com/Chaoses-Ib/Windows/blob/main/UI/GUI/Desktops/Remote.md#remote-desktop-protocol-rdp]
-- #a[xrdp: an open source RDP server][https://github.com/neutrinolabs/xrdp]
+=== #a[xrdp: an open source RDP server][https://github.com/neutrinolabs/xrdp]
   #a-badge[https://wiki.archlinux.org/title/Xrdp]
   - #a[xorgxrdp: Xorg drivers for xrdp][https://github.com/neutrinolabs/xorgxrdp]
   - Xvnc
@@ -66,6 +76,12 @@
   - Check "Always ask for credentials" to avoid login in the remote session, which doesn't support clipboard.
 
   #a[Xvnc vs Xorg - neutrinolabs/xrdp - Discussion \#2619][https://github.com/neutrinolabs/xrdp/discussions/2619]
+
+#a[Cannot open display - Issue \#787][https://github.com/neutrinolabs/xrdp/issues/787]
+
+#a[connect to rdp but black screen - Issue \#2379][https://github.com/neutrinolabs/xrdp/issues/2379]
+
+#a[XRDP -- Griffon's IT Library][https://c-nergy.be/blog/?cat=79]
 
 #a[Wine via xrdp session - WineHQ Forums][https://forum.winehq.org/viewtopic.php?t=18185]
 

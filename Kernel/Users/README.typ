@@ -1,5 +1,7 @@
 #import "@local/ib:0.1.0": *
 #title[Users]
+#a-badge[https://wiki.archlinux.org/title/Users_and_groups]
+
 = Username
 #a[user accounts - What characters should I use or not use in usernames on Linux? - Server Fault][https://serverfault.com/questions/73084/what-characters-should-i-use-or-not-use-in-usernames-on-linux]
 - ```regex ^[a-z][-a-z0-9]*$```

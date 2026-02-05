@@ -29,8 +29,8 @@
 - Security
   - [File Permissions](Kernel/Security/Permissions/README.typ)
 
-## [Virtualization](Virtualization/README.md)
-- [Docker](Virtualization/Docker/README.md)
+## [Virtualization](Virtualization/README.typ)
+- [Docker](Virtualization/Docker/README.typ)
   - [Docker.0](Virtualization/Docker/Docker.0.md)
   - [Docker.1](Virtualization/Docker/Docker.1.md)
   - [Docker.2](Virtualization/Docker/Docker.2.md)

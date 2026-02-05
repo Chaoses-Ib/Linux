@@ -1,8 +1,9 @@
-# Docker
-[Wikipedia](https://en.wikipedia.org/wiki/Docker_(software))
+#import "@local/ib:0.1.0": *
+#title[Docker]
+#a-badge[https://en.wikipedia.org/wiki/Docker_(software)]
 
-## Installation
-[Install | Docker Docs](https://docs.docker.com/engine/install/)
+= Installation
+#a[Install | Docker Docs][https://docs.docker.com/engine/install/]
 
 Ubuntu:
 ```sh

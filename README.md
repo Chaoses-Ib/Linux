@@ -30,6 +30,7 @@
   - [File Permissions](Kernel/Security/Permissions/README.typ)
 
 ## [Virtualization](Virtualization/README.typ)
+- [→Hardware Virtualization](https://github.com/Chaoses-Ib/ComputerHardware/#virtualization)
 - [Docker](Virtualization/Docker/README.typ)
   - [Docker.0](Virtualization/Docker/Docker.0.md)
   - [Docker.1](Virtualization/Docker/Docker.1.md)

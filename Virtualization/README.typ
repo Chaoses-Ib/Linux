@@ -20,6 +20,8 @@
 = Comparison
 #a[Exactly. Docker files are worse than war files in pretty much every way. The eco... | Hacker News][https://news.ycombinator.com/item?id=17517351]
 
+#a[Docker vs. Podman vs. Containerd vs. nerdctl: 2025 Showdown | sanj.dev][https://sanj.dev/post/docker-vs-podman-comparison]
+
 == Docker vs. systemd
 #a[Docker Compose and Systemd - Igor Bubelov][https://bubelov.com/blog/2021/08/docker-compose-systemd/]
 #q[

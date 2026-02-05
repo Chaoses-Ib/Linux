@@ -49,6 +49,7 @@
   - [WSL 2 Backend](Virtualization/Docker/WSL%202%20Backend.md)
   - [Docker Desktop](Virtualization/Docker/Desktop.md)
   - [Windows Container](Virtualization/Docker/Windows%20Container.md)
+- [Podman](Virtualization/Podman/README.typ)
 
 ## UI
 ### GUI

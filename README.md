@@ -38,6 +38,7 @@
   - [Containers](Virtualization/Docker/Containers.md)
   - [Volumes](Virtualization/Docker/Volumes.md)
   - [Networking](Virtualization/Docker/Networking.md)
+  - [Performance](Virtualization/Docker/Performance.typ)
   - [Dockerfile](Virtualization/Docker/Dockerfile.md)
   - [Docker Compose](Virtualization/Docker/Docker%20Compose.md)
   - [Images](Virtualization/Docker/images/Images.md)

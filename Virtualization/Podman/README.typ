@@ -41,6 +41,7 @@
 - #a[```sh podman```][https://docs.podman.io/en/stable/Commands.html]
   #a-badge[https://man.archlinux.org/man/podman.1.en]
 - #a[containers/podman-tui: Podman Terminal UI][https://github.com/containers/podman-tui]
+- $arrow$Podman Desktop
 - Cockpit: #a[cockpit-project/cockpit-podman: Cockpit UI for podman containers][https://github.com/cockpit-project/cockpit-podman]
 
   #a[Podman - Web UI (via Cockpit)][https://blog.while-true-do.io/podman-web-ui-via-cockpit/]

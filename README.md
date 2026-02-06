@@ -50,6 +50,8 @@
   - [Docker Desktop](Virtualization/Docker/Desktop.md)
   - [Windows Container](Virtualization/Docker/Windows%20Container.md)
 - [Podman](Virtualization/Podman/README.typ)
+  - [Podman for Windows](Virtualization/Podman/Windows.typ)
+  - [Podman Desktop](Virtualization/Podman/Desktop.typ)
 
 ## UI
 ### GUI

@@ -25,6 +25,7 @@
 - [xv6](Kernel/xv6.md)
 - [init Systems](Kernel/init/README.typ)
   - [systemd](Kernel/init/systemd/README.typ)
+    - [User](Kernel/init/systemd/User.typ)
     - [Journal](Kernel/init/systemd/Journal.typ)
 - Security
   - [File Permissions](Kernel/Security/Permissions/README.typ)

@@ -10,7 +10,7 @@
   - [Execution](Kernel/Processes/Execution.md)
   - [Exit](Kernel/Processes/Exit.md)
   - [Threads](Kernel/Processes/Threads.md)
-  - [Environment Variables](Kernel/Processes/Environment.md)
+  - [Environment Variables](Kernel/Processes/Environment/README.typ)
   - [Daemons](Kernel/Processes/Daemons/README.md)
   - [Suspending](Kernel/Processes/Suspend/README.typ)
     - [Checkpoint/Restore In Userspace (CRIU)](Kernel/Processes/Suspend/CRIU/README.typ)

@@ -70,7 +70,9 @@
 
 ### [Android](Distributions/Android/README.md)
 - [Linux Distributions on Android](Distributions/Android/Linux%20Distributions%20on%20Android.md)
-- [Rooting](Distributions/Android/Rooting/README.md)
+- [Security](Distributions/Android/Security/README.typ)
+  - [Rooting](Distributions/Android/Security/Rooting/README.md)
+  - [Android Debug Bridge (ADB)](Distributions/Android/Security/ADB.typ)
 - [Sensors](Distributions/Android/Sensors/README.md)
 
 #### GUI

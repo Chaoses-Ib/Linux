@@ -66,6 +66,8 @@
 ## [Distributions](Distributions/README.md)
 - [Debian](Distributions/Debian/README.md)
   - [Ubuntu](Distributions/Debian/Ubuntu/README.md)
+- [NixOS](Distributions/Nix/README.typ)
+  - [GNU Guix](Distributions/Nix/Guix/README.typ)
 - [Windows Subsystem for Linux 2 (WSL2)](Distributions/WSL2/README.md)
 
 ### [Android](Distributions/Android/README.md)
